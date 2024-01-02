@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for ('static', filename= 'bus.png' ) }} "/>
+    <title>Bus Reservation Portal</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename= '15-10-2023.css' ) }} ">
+    <link rel="stylesheet" href="15-10-2023.css">
+    <script src="https://kit.fontawesome.com/a972b744c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navo">
+        <div class="ca open">
+            <i class="fa-solid fa-bus fa-beat fa-2xl"></i><a href="/">EFare</a>
+        </div>
+        <div class="da">
+            <div class="open">
+                <i class="fa-solid fa-house"></i><a href="/">Home</a>
+            </div>
+            <div class="open">
+                <i class="fa-solid fa-ticket"></i><a href="/tickets">Tickets</a>
+            </div>
+            <div class="open">
+                <i class="fa-solid fa-phone"></i><a href="/contact">Contact Us</a>
+            </div>
+            <div class="open">
+                <i class="fa-solid fa-address-card"></i><a href="/about">About Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="abc">
+        <h1>India's No. 1 Online Bus Ticket Booking Site</h1>
+        <h1 style="color: darkred;">Bring's Everyone Closer....</h1>
+        <a href="/tickets">GET STARTED</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for ('static', filename= 'ticket.ico' ) }} "/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='30-10-2023.css') }}">
+    <!-- <link rel="stylesheet" href="30-10-2023.css"> -->
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="registration_form">
+          <div class="title">
+          <b>Geting A Ticket...</b>
+          </div>
+      
+          <form action="/tickets" id="myForm" method="POST">
+            <div class="form_wrap">
+
+              <div class="input_wrap">
+                <label for="title">Aadhaar No.</label>
+                <input type="text" id="title" name="tel" placeholder="Aadhaar Number" required>
+              </div>
+              
+              <div class="input_wrap">
+                <label for="title">Passenger Name</label>
+                <input type="text" id="title" name="passenger_name" placeholder="Your Name" required>
+              </div>
+      
+      
+              <div class="input_wrap">
+                <label for="title">E-Mail</label>
+                <input type="text" id="title" name="telephone" placeholder="E-Mail" required>
+              </div>
+      
+              <div class="input_wrap">
+                <label for="title">Board Place</label>
+                <input type="text" id="title" name="board_place" placeholder="Board Place" required>
+              </div>
+      
+      
+              <div class="input_wrap">
+                <label for="title">Your Destination</label>
+                <input type="text" id="title" name="Your_destination" placeholder="Your Destination" required>
+              </div>
+      
+      
+              <div class="input_wrap">
+                <a href="#" onclick="redirectToNextPage()">
+                  <input type="button" value="Book Now" class="submit_btn" name="AddBooking">
+                </a>
+                
+                <script> 
+                  function redirectToNextPage() { 
+                    document.getElementById("myForm").submit(); // Submit the form 
+                    window.location.href = "/payment"; // Redirect to the next page 
+                  } 
+                </script> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

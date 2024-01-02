@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.navo {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navo a {
+    text-decoration: none;
+    font-size: large;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.ca {
+    display: flex;
+    align-items: center;
+}
+
+.ca a {
+    color: darkorange;
+    font-size: xx-large;
+}
+
+.da {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.da a {
+    display: flex;
+    flex-direction: row;
+    color: antiquewhite;
+    justify-content: space-around;
+}
+
+.da a:hover {
+    color: yellow;
+    font-size: larger;
+    text-decoration: underline 2px yellow;
+}
+
+.open {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.open:hover {
+    transform: scale(1.1);
+}
+
+.abc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 150px;
+    color: aliceblue;
+    flex-direction: column;
+    text-align: center;
+}
+
+.abc h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.abc a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: blueviolet;
+    width: 150px;
+    height: 50px;
+    border: 5px solid blueviolet;
+    border-radius: 15px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: zoomIn 1s 1s forwards;
+}
+
+.abc a:hover {
+    background-color: blue;
+    border: 5px solid blue;
+}
+
+@media screen and (max-width: 768px) {
+    .navo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .da {
+        gap: 10px;
+    }
+
+    .abc {
+        margin-top: 50px;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

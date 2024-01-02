@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for ('static', filename= 'tick.png' ) }} "/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .payment-success {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-success animate__animated animate__fadeIn">
+    <h2>Payment Successful!</h2>
+    <p>Thank you for your payment.</p>
+    <!-- You can add additional information or a button to redirect users to another page -->
+</div>
+
+</body>
+</html>
